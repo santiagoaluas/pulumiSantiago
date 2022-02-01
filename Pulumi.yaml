@@ -1,4 +1,4 @@
-name: aws-fs-s3-folder
+name: aws-cs-s3-folder
 runtime: dotnet
 description: A static website hosted on AWS S3
 template:

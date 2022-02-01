@@ -9,7 +9,7 @@ class WebsiteStack : Stack
     public WebsiteStack()
     {
         // Create an AWS resource (S3 Bucket)
-        var bucket = new Bucket("my-bucket", new BucketArgs
+        var bucket = new Bucket("my-bucket-santiago", new BucketArgs
         {
             Website = new BucketWebsiteArgs
             {
