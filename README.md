@@ -1,4 +1,4 @@
-[![Deploy](https://get.pulumi.com/new/button.svg)](https://app.pulumi.com/new?template=https://github.com/pulumi/examples/blob/master/aws-fs-s3-folder/README.md)
+[![Deploy](https://get.pulumi.com/new/button.svg)](https://app.pulumi.com/new?template=https://github.com/pulumi/examples/blob/master/aws-cs-s3-folder/README.md)
 
 # Host a Static Website on Amazon S3
 
@@ -40,13 +40,13 @@ A static website that uses [S3's website support](https://docs.aws.amazon.com/Am
     +      └─ aws:s3:BucketObject  favicon.png           created     
     
     Outputs:
-        endpoint: "http://my-bucket-1234567.s3-website.us-west-2.amazonaws.com"
+        Endpoint: "http://my-bucket-1234567.s3-website.us-west-2.amazonaws.com"
     ```
 
 1.  Navigate to the website URL:
 
     ```bash
-    $ curl $(pulumi stack output endpoint)
+    $ curl $(pulumi stack output Endpoint)
     <html><head>
         <title>Hello S3</title><meta charset="UTF-8">
         <link rel="shortcut icon" href="/favicon.png" type="image/png">
@@ -56,4 +56,3 @@ A static website that uses [S3's website support](https://docs.aws.amazon.com/Am
     ```
 
 1.  To clean up resources, run `pulumi destroy` and answer the confirmation question at the prompt.
-"# pulumiSantiago" 
